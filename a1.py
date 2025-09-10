@@ -21,7 +21,7 @@ Remember: The goal is to LEARN, not just get working code!
 """
 MY ORIGINAL AI PROMPT:
 I'm learning Python basics in a high school programming class. I have experience with Javascript as i took APCSP and scored a 4, 
-so I have a good understand of the basics of coding, but I don't understand anything about Pythons. Could you create 7-10 practice
+so I have a good understand of the basics of coding, but I don't understand anything about Pythons. Could you create 5 practice
 problems that cover the basic foundations of Python, like basic stuff I should know?
 
 Example: "I'm learning Python basics in a high school programming class. 
@@ -33,18 +33,32 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 # =============================================================================
 
 """
-PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
+PROBLEM 1: Problem 1: Hello, Input! Goal: Ask for user input and print a greeting.
 
-Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
+Input: In Python, you use the input() function to get text typed by the user.
 
-Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
+Storing input: Store what the user types in a variable, like name = input("What is your name? ").
+
+Output: Use print() to display text on the screen.
+
+String concatenation: Combine the greeting string and the name variable. In Python, you can do this using commas inside print() (which adds a space), or use string formatting.
+
+Tip: Think about how you might do alert("Hello, " + name) in JavaScript — in Python, it's similar but with print().
 """
 
+"""
+Problem 2: Even or Odd Goal: Check if a number is even or odd.
+
+Use input() to get the number as text.
+
+Convert the input string to an integer with int().
+
+Use the modulo operator % to find the remainder when dividing by 2.
+
+If the remainder is 0, the number is even; otherwise, it's odd.
+
+Use if and else statements to decide what to print.
+"""
 
 
 
@@ -72,10 +86,17 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
 print("Testing Problem 1:")
-# Add your tests here
+name = input("What is your name? ")
+print(name + " is my friends name!")
 
 print("\nTesting Problem 2:")
-# Add your tests here
+number = input("Give me a number, and I'll guess even or odd: ")
+number = int(number)
+    # This converts string to integer so code works, AI helped me with this
+if(number % 2 == 0):
+    print("Even")
+else:
+    print("Odd!") 
 
 print("\nTesting Problem 3:")
 # Add your tests here
