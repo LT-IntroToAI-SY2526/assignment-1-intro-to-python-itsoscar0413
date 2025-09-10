@@ -1,5 +1,5 @@
 # Assignment 1: AI-Generated Python Problems
-# Name: [Your Name Here]
+# Name: Oscar Huerta
 
 """
 AI-Generated Problem Set
@@ -20,7 +20,9 @@ Remember: The goal is to LEARN, not just get working code!
 
 """
 MY ORIGINAL AI PROMPT:
-[Paste the prompt you used to generate your problem set here]
+I'm learning Python basics in a high school programming class. I have experience with Javascript as i took APCSP and scored a 4, 
+so I have a good understand of the basics of coding, but I don't understand anything about Pythons. Could you create 7-10 practice
+problems that cover the basic foundations of Python, like basic stuff I should know?
 
 Example: "I'm learning Python basics in a high school programming class. 
 I have some experience with Java. Can you create 5-7 practice problems that cover..."
