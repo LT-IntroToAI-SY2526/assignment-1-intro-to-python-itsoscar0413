@@ -46,7 +46,7 @@ def factorial(n: int) -> int:
     result = 1
     for num in range(1, n+1):
         result = result * num
-    print(result)
+    # print(result)
     return result
 
 
@@ -84,7 +84,10 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    total = 0
+    for element in lst:
+        total = total + element
+    return total
 
 
 def mean(lst: List[int]) -> float:
@@ -143,6 +146,8 @@ if __name__ == "__main__":
     assert every_other([1, 2, 3, 4, 5]) == [1,3,5], "every_other of [1,2,3,4,5] failed"
     assert every_other([12, 23, 35, 48, 53]) == [12,35,53], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
+    assert sum_list([4, 7, 10, 23, 7]) == 51, "sum_list of [4, 7, 10, 23, 7] failed"
+    # print(sum_list([4, 7, 10, 23, 7]))
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
 
