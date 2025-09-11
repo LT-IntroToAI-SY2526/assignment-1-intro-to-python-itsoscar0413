@@ -60,7 +60,23 @@ If the remainder is 0, the number is even; otherwise, it's odd.
 Use if and else statements to decide what to print.
 """
 
+"""
+Problem 3: FizzBuzz Lite Goal: Loop through numbers 1 to 20, print special words for multiples of 3, 5, or both.
 
+Use a for loop with range(1, 21) to get numbers from 1 to 20.
+
+Use if statements and modulo % to check:
+
+If divisible by 3 and 5 (both), print "FizzBuzz".
+
+Else if divisible by 3, print "Fizz".
+
+Else if divisible by 5, print "Buzz".
+
+Else, print the number itself.
+
+Remember the order of checking matters: check "both" first to avoid missing it.
+"""
 
 
 
@@ -98,8 +114,13 @@ if(number % 2 == 0):
 else:
     print("Odd!") 
 
-print("\nTesting Problem 3:")
-# Add your tests here
+print("Testing Problem 3:")
+numero = int(input("Give me a big number: "))
+
+def numbers(numero):
+    for each in range(1, numero+1):
+        if each % 3 == 0:
+            print(each)
 
 print("\nTesting Problem 4:")
 # Add your tests here
