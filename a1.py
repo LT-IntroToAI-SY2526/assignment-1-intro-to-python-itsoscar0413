@@ -118,9 +118,11 @@ print("Testing Problem 3:")
 numero = int(input("Give me a big number: "))
 
 def numbers(numero):
-    for each in range(1, numero+1):
-        if each % 3 == 0:
-            print(each)
+    for each in range(1, numero + 1):
+        if each % 3 == 0 and each % 5 == 0:
+            print(str(each) + ": Fizzbuzz")
+        else:
+            print(str(each) + ": None")
 
 print("\nTesting Problem 4:")
 # Add your tests here
