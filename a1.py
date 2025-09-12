@@ -121,8 +121,15 @@ def numbers(numero):
     for each in range(1, numero + 1):
         if each % 3 == 0 and each % 5 == 0:
             print(str(each) + ": Fizzbuzz")
+        elif each % 3 == 0:
+            # elif is equal to else if
+            print(str(each) + ": Fizz")
+        elif each % 5 ==0:
+            print(str(each) + ": Buzz")
         else:
             print(str(each) + ": None")
+
+numbers(numero)
 
 print("\nTesting Problem 4:")
 # Add your tests here
