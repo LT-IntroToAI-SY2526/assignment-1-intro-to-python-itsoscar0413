@@ -77,8 +77,28 @@ Else, print the number itself.
 
 Remember the order of checking matters: check "both" first to avoid missing it.
 """
+"""
+Problem 4: List Sum Goal: Add all numbers in a list.
 
+You already have a list, e.g., numbers = [2, 5, 8, 3, 1].
 
+Create a variable to keep track of the total sum, starting at 0.
+
+Use a for loop to go through each number in the list.
+
+Add each number to the total sum.
+
+After the loop, print the total sum.
+"""
+"""
+Problem 10: Convert Temperature Goal: Convert Celsius to Fahrenheit.
+
+Get Celsius from the user (convert input to float or int).
+
+Apply the formula F = C * 9/5 + 32.
+
+Print the Fahrenheit temperature.
+"""
 
 
 
@@ -103,6 +123,7 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 
 print("Testing Problem 1:")
 name = input("What is your name? ")
+# The input is the users response that it gives in the terminal
 print(name + " is my friends name!")
 
 print("\nTesting Problem 2:")
@@ -116,10 +137,12 @@ else:
 
 print("Testing Problem 3:")
 numero = int(input("Give me a big number: "))
+# Asks for a number, so I can test this multiple times by running program
 
 def numbers(numero):
     for each in range(1, numero + 1):
         if each % 3 == 0 and each % 5 == 0:
+            # if the index's remainder of 3 AND 5 equals 0
             print(str(each) + ": Fizzbuzz")
         elif each % 3 == 0:
             # elif is equal to else if
@@ -131,10 +154,28 @@ def numbers(numero):
 
 numbers(numero)
 
-print("\nTesting Problem 4:")
-# Add your tests here
+print("Testing Problem 4:")
+
+def sum_list(list):
+    answer = 0
+    for each in list:
+        answer = answer + each
+        # I could do answer += each, but this is easier for me to learn
+
+    print(answer)
+
+sum_list([1, 2, 3, 4, 5])
+sum_list([1, 2, 3])
+sum_list([1, 2, 3, 10, 23])
 
 print("\nTesting Problem 5:")
-# Add your tests here
 
+def temperature(celsius):
+    fahrenheit = 0
+    fahrenheit = celsius * 9/5 + 32
+    # This is the formula to convert celsius to fahrenheit
+    print (fahrenheit)
 
+temperature(32)
+temperature(29)
+temperature(60)
