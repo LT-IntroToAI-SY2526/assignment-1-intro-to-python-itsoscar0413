@@ -31,3 +31,5 @@ After completing your problems, reflect on:
 7. **What did you learn about collaborating with AI?** What strategies worked best for learning rather than just getting answers?
 
    I learned that AI is useful in terms of translating what information you know beforehand into new information which can be applied. I'm not sure if others do this, but this is how I use AI which helps me learn best. I would try a practice problem and write code, and if it doesn't work i would ask chatgpt to make my code work but in my format. If the code works and it makes sense logically, I understand it and try another problem with what I learned, but if I still don't understand why the code works, I ask ChatGPT to re-explain it in either javascript ter or do another example problem. The point is, if I get the answer and it makes sense as to why the answer is that, then that helps me learn.
+
+wdad
